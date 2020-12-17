@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native'
+import ActiveLink from './ActiveLink'
 
 export default function ScreenA() {
   return (
@@ -7,9 +8,9 @@ export default function ScreenA() {
         Screen A
       </Text>
 
-      <Text style={styles.link} accessibilityRole="link" href={`/screenb`}>
+      <ActiveLink style={styles.link} accessibilityRole="link" href={`/screenb`}>
         Screen B
-      </Text>
+      </ActiveLink>
     </View>
   )
 }
