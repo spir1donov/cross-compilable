@@ -1,23 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
-import { name } from '../app.json'
 
-export default function App(props) {
+export default function ScreenA() {
   return (
     <View style={styles.container}>
       <Text accessibilityRole="header" style={styles.text}>
-        { name }
-      </Text>
-
-      <Text style={styles.link} accessibilityRole="link" href={`/screena`}>
-        a
+        Screen A
       </Text>
 
       <Text style={styles.link} accessibilityRole="link" href={`/screenb`}>
-        b
-      </Text>
-
-      <Text style={styles.link} accessibilityRole="link" href={`/screenc`}>
-        c
+        Screen B
       </Text>
     </View>
   )
@@ -29,12 +20,12 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: 'center',
   },
-  link: {
-    color: 'blue',
-  },
   text: {
     alignItems: 'center',
     fontSize: 24,
     marginBottom: 24,
+  },
+  link: {
+    color: 'blue',
   },
 })
