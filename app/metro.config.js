@@ -8,7 +8,7 @@ const path = require('path');
  */
 
 module.exports = {
-  projectRoot: path.resolve(__dirname, '..', 'shared'),
+  projectRoot: path.resolve(__dirname),
   resolver: new Proxy({}, {
       get: (target, key) => path.join(process.cwd(), 'node_modules', key),
     },
